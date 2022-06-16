@@ -4,6 +4,8 @@ const bubbleSort = (data) => {
   // membuat nested for untuk membandingkan 2 harga awal yang ada
   for (let i = 0; i < data.length; i++) {
     for (let j = 0; j < data.length - i - 1; j++) {
+      //  mengecek apakah nilai pertama lebih besar dari yang kedua
+      //  jika iya, maka lakukan penukaran, selain itu lewati
       if (data[j].harga > data[j + 1].harga) {
         let temp = data[j]; //  menyimpan nilai terbesar awal pada variabel "temp"
 
